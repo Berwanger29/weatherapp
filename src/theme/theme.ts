@@ -14,6 +14,9 @@ export default {
         dark: '#1B1D22'
     },
     fonts: {
-
+        light: 'Overpass_300Light',
+        regular: 'Overpass_400Regular',
+        semiBold: 'Overpass_600SemiBold',
+        bold: 'Overpass_700Bold'
     }
 }
