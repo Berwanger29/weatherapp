@@ -1,10 +1,15 @@
 import { Container } from "./styles";
 import Button from "../../components/Button";
 import { CustomText } from "../../components/CustomText";
+
+import { useNavigation } from '@react-navigation/native'
 import theme from "../../theme/theme";
 
 
 export function Greetings() {
+
+    const navigation = useNavigation()
+
     return (
         <Container>
 
@@ -28,7 +33,7 @@ export function Greetings() {
                 borderColor={theme.colors.gray300}
                 borderRadius={18}
                 height={54}
-
+                onPress={() => navigation.navigate('Tab')}
             >
                 <CustomText
                     label="Iniciar"
