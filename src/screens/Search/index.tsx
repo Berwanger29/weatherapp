@@ -9,6 +9,7 @@ export function Search() {
             <CustomText
                 label="Buscar"
                 fontWeight="400"
+                fontSize={22}
                 color={theme.colors.gray200}
             />
         </Container>

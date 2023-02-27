@@ -9,6 +9,9 @@ import {
 
 import theme from './src/theme/theme';
 import { Navigation } from './src/routes/Navigation';
+import { StatusBar } from 'react-native';
+
+
 export default function App() {
 
   let [fontsLoaded] = useFonts({
@@ -22,8 +25,12 @@ export default function App() {
     return null;
   }
 
+
   return (
     <ThemeProvider theme={theme}>
+      <StatusBar
+        barStyle='light-content'
+      />
       <Navigation />
     </ThemeProvider>
   );

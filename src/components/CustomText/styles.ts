@@ -13,5 +13,5 @@ export const Label = styled(Text) <CustomTextProps>`
     color: ${({ color }) => color};
     font-weight: ${({ fontWeight }) => fontWeight};
     font-size: ${({ fontSize }) => fontSize}px;
-    text-align: ${({ textAlign }) => textAlign ? textAlign : 'right'};
+    text-align: ${({ textAlign }) => textAlign ? textAlign : 'left'};
 `

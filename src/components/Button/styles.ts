@@ -17,4 +17,5 @@ export const CustomButton = styled(TouchableOpacity) <IButton>`
     height: ${({ height }) => height}px;
     align-items: center;
     justify-content: center;
+    width: 100%;
 `

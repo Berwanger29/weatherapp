@@ -4,6 +4,7 @@ import { CustomText } from "../../components/CustomText";
 
 import { useNavigation } from '@react-navigation/native'
 import theme from "../../theme/theme";
+import { IconWeather } from "../../components/IconWeather";
 
 
 export function Greetings() {
@@ -12,6 +13,10 @@ export function Greetings() {
 
     return (
         <Container>
+            <IconWeather
+                width={222}
+                height={214}
+            />
 
             <CustomText
                 label={`Descubra o Clima${'\n'} na sua cidade`}
