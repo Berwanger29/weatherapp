@@ -1,29 +1,25 @@
 import { useEffect } from "react";
 import {
-    Container,
     Icon
 } from "./styles";
-import { ViewIconProps } from "./styles";
+import { ImageProps } from "react-native";
 
-interface IconWeatherProps extends ViewIconProps {
-    src?: string
+interface IconWeatherProps extends ImageProps {
+    width: number
+    height: number
 }
 
 
 export function IconWeather({
     width,
     height,
-    src
+    ...rest
 }: IconWeatherProps) {
-
-    useEffect(()=>{
-        console.log(src)
-    },[])
     return (
             <Icon
-                source={require('../../../assets/icons/cloud-and-thunder-2.png')}
                 width={width}
                 height={height}
+                {...rest}
             />
     )
 }

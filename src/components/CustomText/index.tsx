@@ -1,7 +1,12 @@
+import { TextProps } from "react-native";
 import {
-    CustomTextProps,
+    LabelProps,
     Label,
 } from "./styles";
+
+interface CustomTextprops extends LabelProps {
+    rest?: TextProps
+}
 
 
 export function CustomText({
@@ -9,14 +14,18 @@ export function CustomText({
     color,
     fontWeight,
     fontSize,
-    textAlign
-}: CustomTextProps) {
+    textAlign,
+    decoration,
+    ...rest
+}: CustomTextprops) {
     return (
         <Label
             fontWeight={fontWeight}
             fontSize={fontSize}
             color={color}
             textAlign={textAlign}
+            decoration={decoration}
+            {...rest}
         >
             {label}
         </Label>

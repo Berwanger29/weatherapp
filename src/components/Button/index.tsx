@@ -3,10 +3,10 @@ import { CustomButton, IButton } from "./styles";
 
 
 const Button = ({
-    backgroundColor,
+    backgroundColor = "transparent",
     borderColor = "transparent",
     children,
-    borderRadius,
+    borderRadius = 0,
     height,
     ...rest
 }: IButton): JSX.Element => {

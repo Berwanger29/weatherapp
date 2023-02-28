@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 import theme from "../../theme/theme";
 import { IconWeather } from "../../components/IconWeather";
 
+import icon from '../../../assets/icons/cloud-and-thunder-2.png'
 
 export function Greetings() {
 
@@ -16,6 +17,7 @@ export function Greetings() {
             <IconWeather
                 width={222}
                 height={214}
+                source={icon}
             />
 
             <CustomText
@@ -39,6 +41,9 @@ export function Greetings() {
                 borderRadius={18}
                 height={54}
                 onPress={() => navigation.navigate('Tab')}
+                style={{
+                    width: '100%'
+                }}
             >
                 <CustomText
                     label="Iniciar"
